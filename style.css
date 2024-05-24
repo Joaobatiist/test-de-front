@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper,
+.content {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.content {
+    overflow-x: hidden;
+}
+
+.content .section {
+    width: 100%;
+    min-height: 100vh; /* Definindo uma altura mínima para as seções */
+}
+
+.content .section.hero {
+    background-image: url("photo-1523191339508-68905a77d5e7.avif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Garante que a imagem cubra todo o contêiner */
+}
+
+.image-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    perspective: 500px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.gradient-purple {
+    background: linear-gradient(to bottom, #a18cd1, #fbc2eb);
+}
+
+.gradient-blue {
+    background: linear-gradient(to bottom, #89f7fe, #66a6ff);
+}
